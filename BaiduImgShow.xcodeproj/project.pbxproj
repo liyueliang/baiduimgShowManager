@@ -288,7 +288,7 @@
 		2495C9091B427380007B1390 /* YLWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLWaterViewController.m; sourceTree = "<group>"; };
 		2495C9111B427C93007B1390 /* YLHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLHttpTool.h; sourceTree = "<group>"; };
 		2495C9121B427C93007B1390 /* YLHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLHttpTool.m; sourceTree = "<group>"; };
-		249664341B324F4600FEC921 /* BaiduImgShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduImgShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		249664341B324F4600FEC921 /* BaiduImgShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = BaiduImgShow.app; path = "美图鉴赏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		249664381B324F4600FEC921 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		249664391B324F4600FEC921 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2496643B1B324F4600FEC921 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1136,7 +1136,7 @@
 					"-lstdc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "美图鉴赏";
+				PRODUCT_NAME = BaiduImgShow;
 				PROVISIONING_PROFILE = "8070e03f-d0f0-4d8f-bd1f-f3406ec1f97d";
 			};
 			name = Debug;
@@ -1160,7 +1160,7 @@
 					"-lstdc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "美图鉴赏";
+				PRODUCT_NAME = BaiduImgShow;
 				PROVISIONING_PROFILE = "8070e03f-d0f0-4d8f-bd1f-f3406ec1f97d";
 			};
 			name = Release;
