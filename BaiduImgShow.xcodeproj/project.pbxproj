@@ -109,6 +109,11 @@
 		24AB786D1B44EB5D006D0712 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AB786C1B44EB5D006D0712 /* CoreTelephony.framework */; };
 		24AB786F1B44EB63006D0712 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AB786E1B44EB63006D0712 /* Security.framework */; };
 		24AB78711B44EB67006D0712 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AB78701B44EB67006D0712 /* StoreKit.framework */; };
+		24AED2B41B4CF39F00EDA872 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24AED2AF1B4CF39F00EDA872 /* Default-568h@2x.png */; };
+		24AED2B51B4CF39F00EDA872 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24AED2B01B4CF39F00EDA872 /* Default-667h@2x.png */; };
+		24AED2B61B4CF39F00EDA872 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24AED2B11B4CF39F00EDA872 /* Default-736h@3x.png */; };
+		24AED2B71B4CF39F00EDA872 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 24AED2B21B4CF39F00EDA872 /* Default.png */; };
+		24AED2B81B4CF39F00EDA872 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24AED2B31B4CF39F00EDA872 /* Default@2x.png */; };
 		24BA7A8E1B3B96950037A6EE /* 说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24BA7A8D1B3B96950037A6EE /* 说明.txt */; };
 /* End PBXBuildFile section */
 
@@ -322,6 +327,11 @@
 		24AB786C1B44EB5D006D0712 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		24AB786E1B44EB63006D0712 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		24AB78701B44EB67006D0712 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		24AED2AF1B4CF39F00EDA872 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24AED2B01B4CF39F00EDA872 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		24AED2B11B4CF39F00EDA872 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		24AED2B21B4CF39F00EDA872 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		24AED2B31B4CF39F00EDA872 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		24BA7A8D1B3B96950037A6EE /* 说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "说明.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -618,6 +628,11 @@
 		249664361B324F4600FEC921 /* BaiduImgShow */ = {
 			isa = PBXGroup;
 			children = (
+				24AED2AF1B4CF39F00EDA872 /* Default-568h@2x.png */,
+				24AED2B01B4CF39F00EDA872 /* Default-667h@2x.png */,
+				24AED2B11B4CF39F00EDA872 /* Default-736h@3x.png */,
+				24AED2B21B4CF39F00EDA872 /* Default.png */,
+				24AED2B31B4CF39F00EDA872 /* Default@2x.png */,
 				249664571B324F7700FEC921 /* class */,
 				2496643B1B324F4600FEC921 /* AppDelegate.h */,
 				2496643C1B324F4600FEC921 /* AppDelegate.m */,
@@ -882,12 +897,17 @@
 				248B3F061B4619EC00361087 /* appInfo.html in Resources */,
 				2491CDEA1B3ABC7C0030153F /* MJRefresh.bundle in Resources */,
 				249664421B324F4600FEC921 /* LaunchScreen.xib in Resources */,
+				24AED2B41B4CF39F00EDA872 /* Default-568h@2x.png in Resources */,
 				248B3F201B46280800361087 /* money.html in Resources */,
 				2491CDCA1B3ABC3F0030153F /* MJPhotoBrowser.bundle in Resources */,
 				2496643F1B324F4600FEC921 /* Images.xcassets in Resources */,
+				24AED2B71B4CF39F00EDA872 /* Default.png in Resources */,
 				248B3F1B1B46263D00361087 /* about.html in Resources */,
+				24AED2B51B4CF39F00EDA872 /* Default-667h@2x.png in Resources */,
 				24BA7A8E1B3B96950037A6EE /* 说明.txt in Resources */,
 				243DECCB1B38BD890042C2FD /* MBProgressHUD.bundle in Resources */,
+				24AED2B81B4CF39F00EDA872 /* Default@2x.png in Resources */,
+				24AED2B61B4CF39F00EDA872 /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,8 +1122,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JIA LEI TAO (62NXK8CCZ5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henan Junhe Investment Co., Ltd.";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduImgShow/class/other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduImgShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1117,8 +1136,8 @@
 					"-lstdc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = BaiduImgShow;
-				PROVISIONING_PROFILE = "edd009ce-935c-4da9-b011-603dad5740a7";
+				PRODUCT_NAME = "美图鉴赏";
+				PROVISIONING_PROFILE = "8070e03f-d0f0-4d8f-bd1f-f3406ec1f97d";
 			};
 			name = Debug;
 		};
@@ -1127,8 +1146,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: JIA LEI TAO (62NXK8CCZ5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henan Junhe Investment Co., Ltd.";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiduImgShow/class/other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiduImgShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1142,8 +1160,8 @@
 					"-lstdc++",
 					"-ObjC",
 				);
-				PRODUCT_NAME = BaiduImgShow;
-				PROVISIONING_PROFILE = "edd009ce-935c-4da9-b011-603dad5740a7";
+				PRODUCT_NAME = "美图鉴赏";
+				PROVISIONING_PROFILE = "8070e03f-d0f0-4d8f-bd1f-f3406ec1f97d";
 			};
 			name = Release;
 		};
