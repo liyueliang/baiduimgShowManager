@@ -1,12 +1,12 @@
 #基本瀑布流的图片加载
 
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/1.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/2.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/3.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/4.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/5.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/6.png?raw=true)  
-### ![github](https://github.com/liyueliang/BaiduImgShow/blob/master/screenpng/7.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/1.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/2.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/3.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/4.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/5.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/6.png?raw=true)  
+### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/7.png?raw=true)  
 
 [点击连接安装 http://www.pgyer.com/64PK]
 # 备注说明
