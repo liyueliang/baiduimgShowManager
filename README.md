@@ -8,7 +8,7 @@
 ### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/6.png?raw=true)  
 ### ![github](https://github.com/liyueliang/baiduimgShowManager/blob/master/BaiduImgShow/screenpng/7.png?raw=true)  
 
-[点击连接安装 http://www.pgyer.com/64PK]
+[点击连接安装 http://www.pgyer.com/1fKb]
 # 备注说明
  * 本程序仅用于学习使用,请勿商业使用
  * 数据来源百度图片
