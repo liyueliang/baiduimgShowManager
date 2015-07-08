@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  BaiduImgShow
+//
+//  Created by lyl on 15/5/17.
+//  Copyright (c) 2015年 lyl. All rights reserved.
+//
+
+#ifndef WeiBo_PrefixHeader_pch
+#define WeiBo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+ 
+#define apiImgUrl @"http://image.baidu.com/data/imgs?col=%@&tag=%@&sort=0&tag3=&pn=%@&rn=%@&p=channel&from=1"
+//1:判断是否是ios7
+#define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+//2:活的rgb颜色
+#define ylColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+//3:自定义log
+#ifdef DEBUG
+#define YLLog(...) NSLog(__VA_ARGS__)
+#else
+#define YLLog(...)
+#endif
+
+//4:是否为4英寸
+#define fourInch ([UIScreen mainScreen].bounds.size.height==568)
+#endif
+

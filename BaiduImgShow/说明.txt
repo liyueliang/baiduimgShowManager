@@ -1,0 +1,9 @@
+本程序仅用于学习使用,请勿商业使用.
+1:数据来源百度图片
+2:瀑布流参考 博客园 文顶顶->ios开发ui篇-自定义瀑布里控件
+3:使用李明杰提供的MJRefresh(下拉刷新),MJPhotoBrowser(图片预览)
+4:集成第三方库:jsonkit,asihttprequest,mbprogressHUB
+5:集成友盟统计，版本更新
+6:如有疑问请联系:
+        email:080818.love@163.com
+   
