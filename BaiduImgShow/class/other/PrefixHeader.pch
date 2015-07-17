@@ -16,7 +16,9 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
- 
+
+
+#define UMENG_APPKEY @"558a705b67e58eeb6400333b"
 #define apiImgUrl @"http://image.baidu.com/data/imgs?col=%@&tag=%@&sort=0&tag3=&pn=%@&rn=%@&p=channel&from=1"
 //1:判断是否是ios7
 #define IOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)

@@ -8,13 +8,17 @@
 
 #import "AppDelegate.h"
 #import "YLBaiDuImgViewController.h"
+
 #import "MobClick.h"
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+
 #import "YLCustomerNavController.h"
 #import "YLWaterViewController.h"
 #import "SDImageCache.h" 
 #define UMOnlineConfigDidFinishedNotification @"OnlineConfigDidFinishedNotification"
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-#define UMENG_APPKEY @"558a705b67e58eeb6400333b"
+
 @interface AppDelegate ()
 
 @end
@@ -33,7 +37,7 @@
     
     //集成友盟版本检测,
     [self makeYouMeng];
-    
+    [self makeYouMengShare];
     
     
     
@@ -73,10 +77,80 @@
     //    [MobClick setDelegate:self reportPolicy:REALTIME];  //建议使用新方法
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onlineConfigCallBack:) name:UMOnlineConfigDidFinishedNotification object:nil];
 }
+-(void)makeYouMengShare{
+    //设置友盟社会化组件appkey
+    [UMSocialData setAppKey:UMENG_APPKEY];
+    
+    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToFlickr,UMShareToKakaoTalk,UMShareToPinterest,UMShareToTumblr,UMShareToLine,UMShareToWhatsapp,UMShareToInstagram,UMShareToLWTimeline,UMShareToLWSession,UMShareToYXTimeline,
+         UMShareToYXSession,   UMShareToTwitter, UMShareToFacebook,  UMShareToQQ,  UMShareToQzone,  UMShareToDouban,                             UMShareToRenren,UMShareToTencent]];
+ 
+    [UMSocialConfig showNotInstallPlatforms:@[UMShareToSina, UMShareToEmail,UMShareToSms,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite]];
+    //打开调试log的开关
+    [UMSocialData openLog:YES];
+    
+    //如果你要支持不同的屏幕方向，需要这样设置，否则在iPhone只支持一个竖屏方向
+    [UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
+    
+    //设置微信AppId，设置分享url，默认使用友盟的网址
+    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.umeng.com/social"];
+    
+    //打开新浪微博的SSO开关
+    //    [UMSocialSinaHandler openSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    //    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    
+    //打开腾讯微博SSO开关，设置回调地址，只支持32位
+    //    [UMSocialTencentWeiboHandler openSSOWithRedirectUrl:@"http://sns.whalecloud.com/tencent2/callback"];
+    
+    //    //设置分享到QQ空间的应用Id，和分享url 链接
+    //[UMSocialQQHandler setQQWithAppId:@"100424468" appKey:@"c7394704798a158208a74ab60104f0ba" url:@"http://www.umeng.com/social"];
+    
+    //    //设置易信Appkey和分享url地址
+    //[UMSocialYixinHandler setYixinAppKey:@"yx35664bdff4db42c2b7be1e29390c1a06" url:@"http://www.umeng.com/social"];
+    
+    //    //设置来往AppId，appscret，显示来源名称和url地址，只支持32位
+    //    [UMSocialLaiwangHandler setLaiwangAppId:@"8112117817424282305" appSecret:@"9996ed5039e641658de7b83345fee6c9" appDescription:@"友盟社会化组件" urlStirng:@"http://www.umeng.com/social"];
+    
+    //打开人人网SSO开关
+   // [UMSocialRenrenHandler openSSO];
+    
+    
+    ////    设置facebook应用ID，和分享纯文字用到的url地址
+    //[UMSocialFacebookHandler setFacebookAppID:@"91136964205" shareFacebookWithURL:@"http://www.umeng.com/social"];
+    //
+    ////    下面打开Instagram的开关
+    //[UMSocialInstagramHandler openInstagramWithScale:NO paddingColor:[UIColor blackColor]];
+    //
+    //[UMSocialTwitterHandler openTwitter];
+    
+    //打开whatsapp
+    //[UMSocialWhatsappHandler openWhatsapp:UMSocialWhatsappMessageTypeImage];
+    
+    //打开Tumblr
+    //[UMSocialTumblrHandler openTumblr];
+    
+    //打开line
+    //[UMSocialLineHandler openLineShare:UMSocialLineMessageTypeImage];
+}
 - (void)onlineConfigCallBack:(NSNotification *)note {
     
     NSLog(@"online config has fininshed and note = %@", note.userInfo);
 }
+/**
+ 这里处理新浪微博SSO授权之后跳转回来，和微信分享完成之后跳转回来
+ */
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url wxApiDelegate:nil];
+}
+
+/**
+ 这里处理新浪微博SSO授权进入新浪微博客户端后进入后台，再返回原来应用
+ */
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [UMSocialSnsService  applicationDidBecomeActive];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -91,10 +165,7 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     [MobClick checkUpdate];
 }
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
+ 
 -(void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
     [[SDImageCache sharedImageCache] clearMemory];
 }

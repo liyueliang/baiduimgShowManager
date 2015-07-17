@@ -8,6 +8,7 @@
 
 #import "YLBaseSettingViewController.h"
 
+
 @interface YLSettingViewController :YLBaseSettingViewController
 
 @end
